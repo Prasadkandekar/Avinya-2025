@@ -1,0 +1,78 @@
+@font-face {
+  font-family: myFont;
+  src: url(../../../public/assets/fonts/vtks.ttf);
+}
+.wrap-sponsors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 70px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.domainHeading {
+  /* font-weight: bold; */
+  font-size: 80px;
+  color: rgb(251, 112, 62);
+  font-family: myFont;
+}
+
+.titleSponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 50px;
+}
+
+.logo {
+  height: 130px;
+  width: 220px;
+  object-fit: cover;
+  margin: 0 90px 50px 0;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  /* padding: 1px; */
+}
+.rr {
+  margin-right: 0;
+}
+.hid {
+  visibility: hidden;
+}
+
+/* .solana {
+  width: 250px;
+  margin: 0 90px 50px 0;
+} */
+
+@media (max-width: 768px) {
+  .wrap-sponsors {
+    max-width: 100%;
+    padding-top: 70px;
+    margin-bottom: 20px;
+  }
+  .titleSponsors {
+    justify-content: center;
+  }
+  .logo {
+    margin: 0 0 15px 0;
+    object-fit: cover;
+    width: 230px;
+    height: 130px;
+    margin-bottom: 25px;
+  }
+  .domainHeading {
+    font-size: 60px;
+  }
+
+  .hid {
+    display: none;
+  }
+}
